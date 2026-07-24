@@ -25,3 +25,22 @@ print(f"{mi_lista} -> Se agregó el elemento 6")
 mi_lista.insert(2,15) # insert(índice, valor)
 
 print(f"{mi_lista} -> se agrego el valor de 15 en el índice 2")
+
+# Eliminar elementos de una lista
+# Usando el método remove
+mi_lista.remove(5)
+print(f"{mi_lista} -> Se removió el valor 5") # Es el valor no el índice
+
+# Removemos por índice con el método pop
+mi_lista.pop(1) # Remueve el elemento por el índice 1
+print(f"{mi_lista} -> Se eliminó el índice 1")
+
+# Eliminando usando la palabra del
+del mi_lista[2]
+
+print(f"{mi_lista} se eliminó el índice 2")
+
+# Obtener sublistas
+sublista = mi_lista[1:3] #genera una sublista del índice 1 al 2 (3 no se incluye)
+
+print(f"Sublista [1:3] {sublista}")
